@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入网货帮 </button> -->
+    <block>
+      <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+      <open-data class="userinfo-nickname" type="userNickName"></open-data>
+    </block>
+    <button class="login" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入网货帮 </button>
+  </view>
+  <view class="usermotto">
+    <!-- <text class="user-motto">{{motto}}</text> -->
+  </view>
+</view>
