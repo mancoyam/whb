@@ -9,11 +9,6 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  jump: function () {
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

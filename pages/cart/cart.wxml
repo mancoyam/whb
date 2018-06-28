@@ -6,6 +6,5 @@
       <open-data class="userinfo-nickname" type="userNickName"></open-data>
     </block>
     <button class="login" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入网货帮 </button>
-    <text bindtap='jump'>jump</text>
   </view>
 </view>

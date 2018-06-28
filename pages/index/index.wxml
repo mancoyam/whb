@@ -1,14 +1,25 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入网货帮 </button> -->
-    <block>
-      <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
-      <open-data class="userinfo-nickname" type="userNickName"></open-data>
-    </block>
-    <button class="login" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入网货帮 </button>
+  <view class="head">
+    <view class="search-box"><input type="text" placeholder="请输入档口名称进行搜索" bindinput='search'></input></view>
+    <view class="scan-btn"><icon></icon>扫店铺</view>
   </view>
-  <view class="usermotto">
-    <!-- <text class="user-motto">{{motto}}</text> -->
+  <view class="collect-box">
+    <view class="tab">
+      <view class="l {{type==0?'active':''}}" bindtap='tabclick' data-type="0"><view class="name">商品收藏</view><view class="chose" hidden='{{type==0?false:true}}'></view></view>
+      <view class="r {{type==1?'active':''}}" bindtap='tabclick' data-type="1"><view class="name">档口收藏</view><view class="chose" hidden='{{type==1?false:true}}'></view></view>
+    </view>
+    <scroll-view class="collect-list">
+      <navigator url="">
+        <view class="goods" wx:if="{{type==0}}">
+         <image src=""></image>
+         <text class="goodsnum"></text>
+        </view>
+        <view class="shops" wx:else>
+         <view class="shopname">小优优店铺</view>
+         <view class="shopaddress">女人街B401</view>
+        </view>
+      </navigator>
+    </scroll-view>
   </view>
 </view>

@@ -1,24 +1,98 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.head {
+  width: 100%;
+  height: 64rpx;
+  overflow: hidden;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.search-box {
+  float: left;
+  width: 620rpx;
+  height: 100%;
+  margin: 0 24rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.search-box input {
+  height: 100%;
+  padding-left: 60rpx;
+  font-size: 20rpx;
+  color: #333;
+  background: #f1f1f1;
+  border-radius: 10rpx; 
+  box-sizing: border-box;
 }
-
-.login {
-  margin-top: 30rpx;
+.scan-btn {
+  float: left;
+  width: 60rpx;
+  height: 100%;
+  font-size: 20rpx;
+  color: #999;
 }
-.usermotto {
-  margin-top: 200px;
+input:-moz-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+.collect-box {
+  width: 100%;
+}
+.tab {
+  width: 100%;
+  height: 88rpx;
+  overflow: hidden;
+}
+.l,.r {
+  float: left;
+  width: 50%;
+  height: 50rpx;
+  margin-top: 19rpx;
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+}
+.l {
+  border-right: 1rpx solid #f1f1f1;
+}
+.r {
+  border-left: 1rpx solid #f1f1f1;
+}
+.l.active,.r.active {
+  color: #ff6300;
+}
+.name {
+  width: 100%;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+.chose {
+  width: 50rpx;
+  height: 5rpx;
+  margin: 0 auto;
+  background: #ff6300;
+}
+.collect-list {
+  width: 100%;
+}
+/* .goods {
+  width: 100%;
+  height: 120rpx;
+  padding: 0;
+  border-top: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+} */
+.shops {
+  width: 100%;
+  height: 133rpx;
+  padding: 24rpx 54rpx;
+  border-top: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+}
+.shopname {
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.shopaddress {
+  font-size: 24rpx;
+  color: #999;
 }

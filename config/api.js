@@ -8,4 +8,5 @@ module.exports = {
   Bookmarkshops: ApiRootUrl + '/bookmarks/shops',//店铺收藏列表
   Bookmarkgoods: ApiRootUrl + '/bookmarks/goods',//商品收藏列表
   Bookmark: ApiRootUrl + '/bookmarks',//添加/取消收藏
+  Searchshops: ApiRootUrl + 'searchshops',//搜索店铺
 };
